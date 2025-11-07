@@ -1,0 +1,200 @@
+/* ===========================
+   Global Styles
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0a0a0a; /* Deep black */
+  color: #eaeaea; /* Soft white text */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===========================
+   Header & Navigation
+=========================== */
+header {
+  background-color: #111827; /* Dark navy tone */
+  color: #ffffff;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 1.9rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.6rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #eaeaea;
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover {
+  color: #60a5fa; /* Light blue hover */
+  border-bottom: 2px solid #60a5fa;
+}
+
+/* ===========================
+   Section Styles
+=========================== */
+section {
+  padding: 2.5rem 10%;
+  flex: 1;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #60a5fa;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.7;
+  color: #cccccc;
+}
+
+/* ===========================
+   Resume Page
+=========================== */
+.resume-card {
+  background: #1f2937;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  text-align: left;
+  line-height: 1.8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.resume-card h2 {
+  color: #60a5fa;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid #374151;
+  padding-bottom: 0.4rem;
+}
+
+.resume-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resume-card li {
+  margin: 8px 0;
+  color: #dddddd;
+}
+
+.highlight {
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.contact a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   Bio-data Page
+=========================== */
+.biodata {
+  background: #1f2937;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.biodata h2 {
+  color: #60a5fa;
+  margin-bottom: 1rem;
+}
+
+.biodata ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.biodata li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #dddddd;
+}
+
+.biodata strong {
+  color: #60a5fa;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+  background-color: #111827;
+  color: #cccccc;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+  border-top: 1px solid #1e293b;
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .resume-card, .biodata {
+    padding: 1.5rem;
+  }
+
+  .intro h2 {
+    font-size: 1.6rem;
+  }
+}
